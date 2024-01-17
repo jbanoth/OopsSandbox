@@ -1,0 +1,7 @@
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\bin\Release\OopsSandbox.exe.config
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\bin\Release\OopsSandbox.exe
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\bin\Release\OopsSandbox.pdb
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\obj\Release\OopsSandbox.csproj.AssemblyReference.cache
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\obj\Release\OopsSandbox.csproj.CoreCompileInputs.cache
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\obj\Release\OopsSandbox.exe
+C:\Users\JayaRam\source\repos\OopsSandbox\OopsSandbox\obj\Release\OopsSandbox.pdb
