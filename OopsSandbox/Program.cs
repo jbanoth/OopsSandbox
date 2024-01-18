@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace OopsSandbox
 
     public class DerivedTest : Test
     {
-        
+
         public int derivedtest1 { get; set; }
         public void Disp()
         {
@@ -128,12 +129,19 @@ namespace OopsSandbox
                 //finally ==> executed always (write only execution safe code in exception)
                 //Successfully uploaded the photo.
             }
+            catch (FileNotFoundException fx)
+            {
+                Console.WriteLine(fx.ToString());
+            }
+            catch (DivideByZeroException ds)
+            {
+                Console.WriteLine($"{ds.Message}");
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            finally
-            {
+
             //Say a meaningful message to enduser, photo upload failed, try again!!!
             ChildClass child = new ChildClass();
             Console.WriteLine(child.CompanyName);
@@ -149,8 +157,8 @@ namespace OopsSandbox
             addition.Add(1.23, 34.45);
 
             DerivedTest derivedTest = new DerivedTest();
-            Test test = new Test(); 
-            
+            Test test = new Test();
+
 
             //Polymorphism 
 
@@ -167,7 +175,7 @@ namespace OopsSandbox
             //Encapsulation ==> Data hiding 
             //access modifiers
 
-            }
+
 
         }
     }
