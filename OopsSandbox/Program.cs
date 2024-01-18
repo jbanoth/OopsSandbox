@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -128,12 +129,15 @@ namespace OopsSandbox
                 //finally ==> executed always (write only execution safe code in exception)
                 //Successfully uploaded the photo.
             }
+            catch(FileNotFoundException fx )
+            {
+                Console.WriteLine(fx.ToString());
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            finally
-            {
+            
             //Say a meaningful message to enduser, photo upload failed, try again!!!
             ChildClass child = new ChildClass();
             Console.WriteLine(child.CompanyName);
@@ -167,7 +171,7 @@ namespace OopsSandbox
             //Encapsulation ==> Data hiding 
             //access modifiers
 
-            }
+            
 
         }
     }
