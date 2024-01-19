@@ -123,11 +123,17 @@ namespace OopsSandbox
         {
             try
             {
+                Shape shape = null;
+                Console.WriteLine(  shape.MyId);
                 int n = 100;
                 Console.WriteLine(n / 10);
                 //positve scenario/code does not throw errors ==> control doesnt goes into catch block
                 //finally ==> executed always (write only execution safe code in exception)
                 //Successfully uploaded the photo.
+            }
+            catch(NullReferenceException nx)
+            {
+                Console.WriteLine(  nx.ToString());
             }
             catch (FileNotFoundException fx)
             {
