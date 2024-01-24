@@ -124,16 +124,16 @@ namespace OopsSandbox
             try
             {
                 Shape shape = null;
-                Console.WriteLine(  shape.MyId);
+                Console.WriteLine(shape.MyId);
                 int n = 100;
                 Console.WriteLine(n / 10);
                 //positve scenario/code does not throw errors ==> control doesnt goes into catch block
                 //finally ==> executed always (write only execution safe code in exception)
                 //Successfully uploaded the photo.
             }
-            catch(NullReferenceException nx)
+            catch (NullReferenceException nx)
             {
-                Console.WriteLine(  nx.ToString());
+                Console.WriteLine(nx.ToString());
             }
             catch (FileNotFoundException fx)
             {
@@ -147,6 +147,11 @@ namespace OopsSandbox
             {
                 Console.WriteLine(ex.ToString());
             }
+            finally
+            {
+                Console.WriteLine(  "infinally");
+            }
+
 
             //Say a meaningful message to enduser, photo upload failed, try again!!!
             ChildClass child = new ChildClass();
@@ -180,6 +185,8 @@ namespace OopsSandbox
             //Abstraction ==> Implementation hiding
             //Encapsulation ==> Data hiding 
             //access modifiers
+
+
 
 
 
