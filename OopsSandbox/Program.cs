@@ -9,7 +9,7 @@ namespace OopsSandbox
 {
     public class Test
     {
-        protected int test1 { get; set; }
+        protected int test12 { get; set; }
     }
 
     public class DerivedTest : Test
